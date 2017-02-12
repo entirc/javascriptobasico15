@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="shortcut icon" href="Retro.png"/>
+        <title>ENTI Javascript #15</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="//javascript: ex2()">
+        <button onclick="ex1()">Ex1</button>
+        <button onclick="ex2()">Ex2</button>
+        <button onclick="ex3()">Ex3</button>
+        <button onclick="ex4()">Ex4</button>
+        <button onclick="ex5()">Ex5</button>
+        <button onclick="ex6()">Ex6</button>
+        <button onclick="openWin()">Abre</button>
+        <button onclick="escreve()">Escreve</button>
+        <button onclick="escreve1()">Escreve1</button>
+        <button onclick="escreve2()">Escreve2</button>
+        <button onclick="escreve3()">Escreve3</button>
+        <button onclick="closeWin()">Fecha</button>
+        <p></p>
+        <button onclick="openRequestedPopup()">openRequestedPopup</button>
+        <button onclick="openRequestedPopup1()">openRequestedPopup1</button>
+        <button onclick="Popuplink()">openRequestedPopup2</button>
+
+        <p><a
+                href="http://www.spreadfirefox.com/"
+                target="PromoteFirefoxWindowName"
+                onclick="openFFPromotionPopup(); return false;" 
+                title="This link will create a new window or will re-use an already opened one"
+                >Promote Firefox adoption</a></p>
+
+        <a href="#" 
+           onclick="Popuplink();">
+            Popuplink 
+        </a>
+        <br>
+        <a href="formtext2.html" 
+           onclick="window.open(this.href, 'targetWindow', 'scrollbars=yes, resizable=no, width=SomeSize, height=SomeSize');
+                   return false;">
+            Popuplink1 
+        </a>
+        <p></p>
+        <input type="button" value="Novo popup" onclick="openWindow()" /> 
+    </body>
+    <script src="js/funcoes.js" type="text/javascript"></script>
+</html>
+

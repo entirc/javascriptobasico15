@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="shortcut icon" href="Retro.png"/>
+        <title>ENTI Javascript #15</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--https://www.youtube.com/watch?v=Pc2e2YpKArg -->
+        <h1>Checando strings vazias</h1>
+
+        <form action="#" onsubmit="verifiqueFormularioEmBranco()">
+            <fieldset>
+                <label>Nome:
+                    <input type="text" id="nome" name="nome">
+                </label>
+                <br><br>
+                <label>Sobrenome:
+                    <input type="text" id="sobrenome" name="sobrenome">
+                </label>
+                <br><br>
+                <input type="submit" value="enviar">
+            </fieldset>
+        </form> 
+
+        <p></p>
+
+        <form name="myForm" action="#" onsubmit="return validateForm()" >
+            Name: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+        </form>
+
+        <p></p>
+
+        <h1>JavaScript Pode Validar INPUT</h1>
+
+        <p>Digite um número de 1 à 10:</p>
+
+        <input id="numb">
+
+        <button type="button" onclick="soNumero()">Submit</button>
+
+        <p id="demo"></p>
+
+        <p></p>
+
+        <p>Digite um número de clique no OK:</p>
+
+        <input id="id1" type="number" min="100" max="300" required>
+        <button onclick="soNumero1()">OK</button>
+
+        <p>Se o número for menor que 100 e maior que 300, uma mensagem de erro aparecerá.</p>
+        <p id="demo1"></p>
+
+        <p></p>
+        <hr>
+        Máximo 100: <input id="idMaior" type="number" max="100">
+        Mínimo 10: <input id="idMenor" type="number" min="10">
+        <button onclick="soNumero2()">OK</button>
+
+        <p id="demo2"></p>
+
+        <p></p>
+        <hr>     
+
+        <form action="#" name="meuForm" onsubmit="return(validate());">
+            <table cellspacing="2" cellpadding="2" border="1">
+
+                <tr>
+                    <td align="right">Name</td>
+                    <td><input type="text" name="Name" /></td>
+                </tr>
+
+                <tr>
+                    <td align="right">EMail</td>
+                    <td><input type="text" name="EMail" /></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Zip Code</td>
+                    <td><input type="text" name="Zip" /></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Country</td>
+                    <td>
+                        <select name="Country">
+                            <option value="-1" selected>[choose yours]</option>
+                            <option value="1">USA</option>
+                            <option value="2">Brasil</option>
+                            <option value="3">INDIA</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right"></td>
+                    <td><input type="submit" value="Submit" /></td>
+                </tr>
+
+            </table>
+        </form>
+
+        <p></p>
+        <hr>
+        <form action="#" onsubmit="return checkForm(this);">
+            <p>Input: <input type="text" size="32" name="inputfield">
+                <input type="submit"></p>
+        </form>
+
+
+
+
+        <script src="js/form.js" type="text/javascript"></script>
+
+    </body>
+</html>
